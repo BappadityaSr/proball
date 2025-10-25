@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Basketball Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <div class="ball"></div>
+                    <div class="line"></div>
+                </div>
+                Basketball Pro
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout-hero">
+            <div class="container">
+                <h1>Checkout</h1>
+                <p>Complete your basketball purchase</p>
+            </div>
+        </section>
+
+        <section class="checkout-section">
+            <div class="container">
+                <div class="checkout-content">
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div class="selected-product">
+                            <img id="product-image" src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=300&fit=crop" alt="Selected Basketball">
+                            <div class="product-details">
+                                <h3 id="product-name">Professional Series</h3>
+                                <p id="product-description">Official NBA size and weight</p>
+                                <span class="price" id="product-price">$89.99</span>
+                            </div>
+                        </div>
+                        <div class="order-total">
+                            <div class="total-row">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">$89.99</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Shipping:</span>
+                                <span>$9.99</span>
+                            </div>
+                            <div class="total-row final-total">
+                                <span>Total:</span>
+                                <span id="final-total">$99.98</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-form">
+                        <h2>Billing Information</h2>
+                        <form id="checkout-form">
+                            <div class="form-row">
+                                <input type="text" placeholder="First Name" required>
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="text" placeholder="Address Line 1" required>
+                            <input type="text" placeholder="Address Line 2">
+                            <div class="form-row">
+                                <input type="text" placeholder="City" required>
+                                <input type="text" placeholder="State" required>
+                                <input type="text" placeholder="ZIP Code" required>
+                            </div>
+                            <select required>
+                                <option value="">Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="IN">India</option>
+                            </select>
+                            
+                            <h3>Payment Information</h3>
+                            <input type="text" placeholder="Card Number" required>
+                            <div class="form-row">
+                                <input type="text" placeholder="MM/YY" required>
+                                <input type="text" placeholder="CVV" required>
+                            </div>
+                            <input type="text" placeholder="Cardholder Name" required>
+                            
+                            <button type="submit" class="checkout-btn">Complete Purchase</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Basketball Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

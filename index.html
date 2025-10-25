@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Manufacturing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <div class="ball"></div>
+                    <div class="line"></div>
+                </div>
+                Proball
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Premium Basketball Manufacturing</h1>
+                <p>Crafting professional-grade basketballs</p>
+                <button class="cta-btn">View Products</button>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=300&fit=crop" alt="Professional Basketball">
+                        <h3>Professional Series</h3>
+                        <p>Official NBA size and weight. Premium leather construction with superior grip and durability.</p>
+                        <span class="price">$89.99</span>
+                        <button class="buy-btn" onclick="buyProduct('Professional Series', '$89.99', 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=300&fit=crop')">Buy Now</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?w=400&h=300&fit=crop" alt="Training Basketball">
+                        <h3>Training Series</h3>
+                        <p>Built for intensive practice sessions. Enhanced bounce and long-lasting performance.</p>
+                        <span class="price">$59.99</span>
+                        <button class="buy-btn" onclick="buyProduct('Training Series', '$59.99', 'https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?w=400&h=300&fit=crop')">Buy Now</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1627627256672-027a4613d028?w=400&h=300&fit=crop" alt="Youth Basketball">
+                        <h3>Youth Series</h3>
+                        <p>Perfectly sized for young athletes. Lightweight design with excellent control.</p>
+                        <span class="price">$39.99</span>
+                        <button class="buy-btn" onclick="buyProduct('Youth Series', '$39.99', 'https://images.unsplash.com/photo-1627627256672-027a4613d028?w=400&h=300&fit=crop')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Us</h2>
+                        <p>With over 35 years of experience, we've been manufacturing high-quality basketballs for players at every level. Our commitment to excellence and innovation has made us a trusted name in the basketball community.</p>
+                        <ul>
+                            <li>Premium leather construction</li>
+                            <li>Official NBA specifications</li>
+                            <li>Rigorous quality testing</li>
+                            <li>Worldwide shipping</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="dunk.jpg" alt="Basketball Manufacturing Process">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><span style="color: #8b5cf6; font-size: 1.2rem;">📍</span> Somewhere on Earth </p>
+                        <p><span style="color: #8b5cf6; font-size: 1.2rem;">📞</span>+91-1234567891</p>
+                        <p><span style="color: #8b5cf6; font-size: 1.2rem;">✉️</span> info@proball.com</p>
+                        <p><span style="color: #8b5cf6; font-size: 1.2rem;">🕒</span> Mon-Fri: 9AM-6PM IST</p>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Basketball Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
